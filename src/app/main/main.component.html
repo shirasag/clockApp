@@ -1,0 +1,24 @@
+
+
+
+<div class="row radio">
+    <div class="col-4">
+        <label>Select No. of Clocks to show: </label>
+    </div>
+    <div class="col">
+        <div class="form-inline">        
+            <div class="btn-group" btnRadioGroup [(ngModel)]="radioModel">
+            <label class="btn btn-success" btnRadio="1">1</label>
+            <label class="btn btn-success" btnRadio="2">2</label>
+            <label class="btn btn-success" btnRadio="3">3</label>
+            <label class="btn btn-success" btnRadio="4">4</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-3 col-s-6"  *ngFor="let zone of zones | slice: 0 : radioModel">       
+    <app-analog-clock [City]="zone.City" [TimeDiff]="zone.TimeDiff"></app-analog-clock>
+  </div>
+</div>
+

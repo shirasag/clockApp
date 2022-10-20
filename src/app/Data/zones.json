@@ -1,0 +1,18 @@
+[
+    {
+        "City" : "Tel Aviv",
+        "TimeDiff" : 0
+    },
+    {
+        "City" : "London",
+        "TimeDiff" : 2
+    },
+    {
+        "City" : "New York",
+        "TimeDiff" : 7
+    },
+    {
+        "City" : "Tokyo",
+        "TimeDiff" : 9
+    }
+]
